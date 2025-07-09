@@ -1,1 +1,4 @@
 **/*.txt
+main_order2.py
+ODEs_solver_1D_order_2.py
+__pycache__

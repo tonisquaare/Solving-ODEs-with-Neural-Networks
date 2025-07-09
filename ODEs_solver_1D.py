@@ -27,7 +27,7 @@ def solve_ODE(a,b,equation,trial_function,order=2,max_iters=1000,tol=1e-7,lr=1e-
     """
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    x_np = np.linspace(a,b,100)
+    x_np = np.linspace(a,b,POINTS)
     x = torch.Tensor(x_np,device=device).unsqueeze(1)
     x.requires_grad_(True)
 
